@@ -7,7 +7,7 @@ ZSH_CUSTOM=$HOME/.dotfiles/misc/oh-my-zsh-custom
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 
 # Hide username in prompt
 DEFAULT_USER=`whoami`
@@ -89,6 +89,7 @@ export PATH=/usr/local/bin:$PATH
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="/usr/local/opt/node@8/bin:$PATH"
+export PATH="$HOME/.docker/bin:$PATH"
 
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
@@ -96,3 +97,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 #copilot
 # eval "$(github-copilot-cli alias -- "$0")"
+
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export PATH="/usr/local/opt/awscli@1/bin:$PATH"

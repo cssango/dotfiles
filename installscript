@@ -68,9 +68,9 @@ echo 'Install ncdu'
 echo '------------'
 brew install ncdu
 
-echo 'Install hub'
-echo '-----------'
-brew install hub
+# echo 'Install hub'
+# echo '-----------'
+# brew install hub
 
 echo 'Install ack'
 echo '-----------'
@@ -142,23 +142,9 @@ echo 'Install phpunit-watcher'
 echo '-----------------------'
 composer global require spatie/phpunit-watcher
 
-echo 'Install laravel valet'
-echo '---------------------'
-composer global require laravel/valet
-valet install
-
-echo 'Install mysql'
-echo '-------------'
-brew install mysql
-brew services start mysql
-
 echo 'Install yarn'
 echo '------------'
 brew install yarn
-
-echo 'Install ghostscript'
-echo '-------------------'
-brew install ghostscript
 
 echo 'Install mackup'
 echo '--------------'
