@@ -156,3 +156,35 @@ function silent() {
    "$@" >& /dev/null
 }
 
+function homestead() {
+    ( cd ~/Homestead && vagrant $* )
+}
+
+function bfg() {
+    ( java -jar ~/ConvertizeIO/bfg.jar $* )
+}
+
+function jigsaw() {
+    ( ./vendor/bin/jigsaw $* )
+}
+
+function forgessh() {
+    ssh forge@$*
+}
+
+function php82() {
+    brew link --overwrite --force php@8.2
+}
+
+function php74() {
+    brew link --overwrite --force php@7.4
+}
+
+function pint() {
+   if [ -f ./vendor/bin/pint ]; then
+      ./vendor/bin/pint "$@"
+   else
+      echo 'pint not found in folder'
+   fi
+}
+
