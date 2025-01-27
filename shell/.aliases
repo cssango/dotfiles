@@ -92,7 +92,7 @@ alias dnsflush='sudo killall -HUP mDNSResponder'
 alias convertize-deployments='ssh -i "/Users/chumang/ConvertizeIO/certificates/prd.pem" centos@ec2-52-211-117-199.eu-west-1.compute.amazonaws.com'
 alias deployments-scenario='ssh -i "/Users/chumang/ConvertizeIO/certificates/scenario-prd.pem" centos@54.216.80.87'
 alias deployments-convertize='ssh root@51.89.233.166 -p 34422 -A'
-alias deployments-nudgify='ssh root@51.89.233.166 -p 34522 -A'
+alias deployments-nudgify='ssh ubuntu@64.227.40.6 -A'
 
 alias wisebusiness='ssh root@217.174.252.148'
 
@@ -111,12 +111,12 @@ alias nudgify-staging-portal='ssh root@46.101.89.208 -p 34422'
 alias nudgify-staging-worker='ssh root@167.71.132.46 -p 34422'
 alias nudgify-staging-clickhouse="ssh root@161.35.169.147"
 
-alias nudgify-prod-lb='ssh root@178.62.95.38'
 alias nudgify-prod-pixel-1='ssh root@167.71.129.155 -p 34422'
 alias nudgify-prod-pixel-2='ssh root@165.232.102.102 -p 34422'
 alias nudgify-prod-pixel-3='ssh root@46.101.23.217 -p 34422'
-alias nudgify-prod-portal='ssh root@134.209.20.240 -p 34422'
-alias nudgify-prod-worker-1='ssh root@165.22.124.12 -p 34422'
+alias nudgify-prod-portal='ssh root@165.227.228.105 -p 34422'
+alias nudgify-prod-webhooks='ssh root@134.209.20.240 -p 34422'
+alias nudgify-prod-worker='ssh root@165.22.124.12 -p 34422'
 alias nudgify-prod-redis='ssh root@165.227.224.126 -p 34422'
 alias nudgify-prod-clickhouse-1="ssh root@134.209.29.210"
 alias nudgify-prod-clickhouse-2="ssh root@134.209.181.145"
