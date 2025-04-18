@@ -92,7 +92,7 @@ alias dnsflush='sudo killall -HUP mDNSResponder'
 alias convertize-deployments='ssh -i "/Users/chumang/ConvertizeIO/certificates/prd.pem" centos@ec2-52-211-117-199.eu-west-1.compute.amazonaws.com'
 alias deployments-scenario='ssh -i "/Users/chumang/ConvertizeIO/certificates/scenario-prd.pem" centos@54.216.80.87'
 alias deployments-convertize='ssh root@51.89.233.166 -p 34422 -A'
-alias deployments-nudgify='ssh ubuntu@64.227.40.6 -A'
+alias deployments-nudgify='ssh root@64.227.40.6 -A'
 
 alias wisebusiness='ssh root@217.174.252.148'
 

@@ -160,10 +160,6 @@ function homestead() {
    (cd ~/Homestead && vagrant $*)
 }
 
-function bfg() {
-   (java -jar ~/ConvertizeIO/bfg.jar $*)
-}
-
 function jigsaw() {
    (./vendor/bin/jigsaw $*)
 }
@@ -184,7 +180,13 @@ function php83() {
    sudo update-alternatives --set phpize /usr/bin/phpize8.3
 }
 
-function pint() {
+function php84() {
+   sudo update-alternatives --set php /usr/bin/php8.4
+   sudo update-alternatives --set php-config /usr/bin/php-config8.4
+   sudo update-alternatives --set phpize /usr/bin/phpize8.4
+}
+
+function phpformat() {
    if [ -f ./vendor/bin/pint ]; then
       ./vendor/bin/pint "$@"
    else
